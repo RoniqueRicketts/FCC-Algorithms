@@ -1,17 +1,17 @@
 function factorialize(num) {
-  var a = [];
+  var arrayOfNumbers = [];
    if(num === 0){
     return 1;
   }
   else{
     
-  for(var i = 1; i <= num; i++){
-    a.push(i);
+  for(var index = 1; index <= num; index++){
+    arrayOfNumbers.push(index);
   }
-  var next = a.reduce(function(a,b){
-    return a * b;
+  var result = arrayOfNumbers.reduce(function(firstNumber,secondNumber){
+    return firstNumber * secondNumber;
   });
-  return next;
+  return result;
   }
 }
 factorialize(5);
